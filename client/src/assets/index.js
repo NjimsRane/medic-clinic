@@ -1,7 +1,21 @@
 export { default as logo1 } from './images/logo.png';
+export { default as logo2 } from './images/logo-white.png';
 export { default as child } from './images/patient.jpg';
+export { default as hero } from './images/hero.jpg';
 export { default as dr1 } from './images/dr1.jpg';
 export { default as dr2 } from './images/dr2.jpg';
 export { default as dr3 } from './images/doktorka1.png';
-
-export { default as pill } from './images/pill.svg';
+export { default as dr4 } from './images/dr3.jpg';
+export { default as dr5 } from './images/dr4.jpg';
+export { default as dr6 } from './images/dr5.jpg';
+export { default as dr7 } from './images/dr6.jpg';
+export { default as pills } from './images/pills2.jpg';
+export { default as chairs } from './images/poster.jpg';
+export { default as stock } from './images/shutterstock.jpg';
+export { default as materials } from './images/materials.jpg';
+export { default as emergency } from './images/ambulance.png';
+export { default as booking } from './images/booking.png';
+export { default as cared } from './images/healthcare.png';
+export { default as service } from './images/social-care.png';
+export { default as team } from './images/medical-team.png';
+export { default as support } from './images/support.png';

@@ -1,5 +1,5 @@
 import { HomeTitles, OurSpecialist } from "..";
-import { dr1, dr2 } from '../../assets';
+import { dr6, dr5, dr4, dr7 } from '../../assets';
 
 
 const OurSpecialists = () => {
@@ -7,27 +7,28 @@ const OurSpecialists = () => {
     const ourSpecialistData = [
         {
             id: 1,
-            img: dr1,
+            img: dr5,
             name: 'njims rane',
-            title: 'surgery'
+            title: 'Pediatrician'
         },
         {
             id: 2,
-            img: dr2,
-            name: 'john doe',
-            title: 'anesthetic'
+            img: dr6,
+            name: 'liza doe',
+            title: 'Cosmetic Surgeon'
         },
         {
             id: 3,
-            img: dr1,
-            name: 'liza doe',
-            title: 'orthopedic'
+            img: dr4,
+            name: 'john doe',
+            title: 'Dental surgeon'
         },
+
         {
             id: 4,
-            img: dr2,
+            img: dr7,
             name: 'rane njims',
-            title: 'cardiology'
+            title: 'cardiologist'
         },
 
     ];

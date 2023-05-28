@@ -1,5 +1,5 @@
 import { HomeTitles, OurService } from "../../components";
-import { pill } from '../../assets';
+import { cared, service, team, emergency, booking, support } from '../../assets';
 
 
 const OurServices = () => {
@@ -7,37 +7,37 @@ const OurServices = () => {
     const ourServiceData = [
         {
             id: 1,
-            img: pill,
+            img: booking,
             title: 'online booking',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt molestiae alias aperiam ut atque, harum necessitatibus? Magnam, tempore veritatis.'
         },
         {
             id: 2,
-            img: pill,
+            img: team,
             title: 'qualified doctors',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt molestiae alias aperiam ut atque, harum necessitatibus? Magnam, tempore veritatis.'
         },
         {
             id: 3,
-            img: pill,
+            img: service,
             title: 'private support',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt molestiae alias aperiam ut atque, harum necessitatibus? Magnam, tempore veritatis.'
         },
         {
             id: 4,
-            img: pill,
+            img: cared,
             title: 'well cared',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt molestiae alias aperiam ut atque, harum necessitatibus? Magnam, tempore veritatis.'
         },
         {
             id: 5,
-            img: pill,
+            img: emergency,
             title: 'need emergency',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt molestiae alias aperiam ut atque, harum necessitatibus? Magnam, tempore veritatis.'
         },
         {
             id: 6,
-            img: pill,
+            img: support,
             title: '24 service',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt molestiae alias aperiam ut atque, harum necessitatibus? Magnam, tempore veritatis.'
         }
