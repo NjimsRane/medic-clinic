@@ -6,9 +6,9 @@ const FooterPosts = ({ imgPost, datePost, titlePost }) => {
             <Link to='/'>
                 <img src={imgPost} alt="post pictures" className="w-40 h-fit" />
             </Link>
-            <div className="flex flex-col gap-1">
-                <p className="text-[#ffffff8c] uppercase text-xl">{datePost}</p>
-                <Link to='/' className="text-xl text-white font-semibold transition-all duration-500 hover:text-[#0CB8B6]">
+            <div className="flex flex-col gap-2 text-xl">
+                <span className="text-[#ffffff8c] uppercase ">{datePost}</span>
+                <Link to='/' className="w-[13rem] text-white font-semibold transition-all duration-500 hover:text-[#0CB8B6]">
                     {titlePost}
                 </Link>
             </div>

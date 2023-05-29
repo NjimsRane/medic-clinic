@@ -13,11 +13,11 @@ const Footer = () => {
 
             <div className="bg-[#1D1F27] py-10">
                 <div className="container flex flex-col gap-10 lg:flex-row lg:justify-between">
-                    <div className="flex-1 mt-16 grid grid-cols-1 gap-8 lg:gap-0 lg:mt-0">
-                        <Link to='/'>
+                    <div className="flex flex-1 flex-col gap-6 mt-16 lg:mt-0">
+                        <Link to='/' className="block">
                             <img src={logo2} alt="logo" />
                         </Link>
-                        <p className="text-white text-xl leading-relaxed">
+                        <p className="text-white text-xl leading-relaxed lg:w-[30rem]">
                             Sed magna nulla, pulvinar vel ante vel, fringilla vulputate nibh. In placerat facilisis tincidunt. Integer quis erat dictum, placerat massa non, bibendum ante. Duis aliquet tellus magna, quis egestas enim vulputate sed. Phasellus in dui malesuada, lacinia urna sed.
                         </p>
                     </div>
@@ -67,30 +67,32 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-700">
-                <div className="container flex flex-col items-center gap-4">
-                    <div className="text-lg text-white flex items-center gap-3">
+            <div className="bg-gray-700 py-4">
+                <div className="container flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
+                    <div className="text-xl text-white flex items-center gap-3">
                         <span>Made by NjimsRane with </span>
                         <AiFillHeart className="text-[crimson]" /> <span>Copyright@ {year}.All rights reserved.</span>
                     </div>
-                    <div className="flex gap-4 footerLinks">
-                        <a href="https://www.facebook.com" aria-label='link to facebook page' rel='noopener noreferrer' target='_blank'>
-                            <GrFacebookOption className='icons' />
-                        </a>
+                    <div className="flex flex-col gap-4 lg:flex-row-reverse">
+                        <div className="flex justify-center gap-4 footerLinks">
+                            <a href="https://www.facebook.com" aria-label='link to facebook page' rel='noopener noreferrer' target='_blank'>
+                                <GrFacebookOption className='icons' />
+                            </a>
 
-                        <a href="https://www.twitter.com" aria-label='link to twitter page' rel='noopener noreferrer' target='_blank'>
-                            <TiSocialTwitter className='icons' />
-                        </a>
+                            <a href="https://www.twitter.com" aria-label='link to twitter page' rel='noopener noreferrer' target='_blank'>
+                                <TiSocialTwitter className='icons' />
+                            </a>
 
-                        <a href="https://www.pinterest.com" aria-label='link to pinterest page' rel='noopener noreferrer' target='_blank'>
-                            <TiSocialPinterest className='icons' />
-                        </a>
-                    </div>
-                    <div className=" footerServices flex items-center gap-4 uppercase">
-                        <Link to='/'>about us</Link>
-                        <Link to='/'>services</Link>
-                        <Link to='/'>contact us</Link>
-                        <Link to='/'>working hours</Link>
+                            <a href="https://www.pinterest.com" aria-label='link to pinterest page' rel='noopener noreferrer' target='_blank'>
+                                <TiSocialPinterest className='icons' />
+                            </a>
+                        </div>
+                        <div className=" footerServices flex items-center gap-4 uppercase">
+                            <Link to='/'>about us</Link>
+                            <Link to='/'>services</Link>
+                            <Link to='/'>contact us</Link>
+                            <Link to='/'>working hours</Link>
+                        </div>
                     </div>
                 </div>
             </div>

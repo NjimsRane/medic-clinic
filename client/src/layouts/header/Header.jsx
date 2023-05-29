@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header>
             <NavBar />
-            <Hero />
+
         </header>
     );
 };

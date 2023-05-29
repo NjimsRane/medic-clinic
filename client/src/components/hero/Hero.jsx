@@ -12,7 +12,7 @@ const Hero = () => {
                     <p className="text-2xl md:w-[95%]">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur tempore accusamus tempora alias, illo quae, voluptates deleniti ratione harum magni maiores eveniet doloribus accusantium placeat pariatur. Magnam vel iusto quam eaque doloribus reiciendis harum? Nostrum ab obcaecati hic veniam officiis?
                     </p>
-                    <Link to='/'>
+                    <Link to='/appointment'>
                         <button type="button" className="bg-[#0CB8B6] px-4 py-3 text-2xl capitalize text-white rounded">make appointment</button>
                     </Link>
                 </div>

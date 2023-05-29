@@ -1,5 +1,6 @@
-import { HomeTitles, OurSpecialist } from "..";
+import { HomeTitles, OurSpecialist, SpecialistComponent } from "../../components";
 import { dr6, dr5, dr4, dr7 } from '../../assets';
+
 
 
 const OurSpecialists = () => {
@@ -51,6 +52,7 @@ const OurSpecialists = () => {
 
                 ))}
             </div>
+            <SpecialistComponent />
         </div>
     );
 };

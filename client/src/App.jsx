@@ -4,7 +4,7 @@ import {
   Outlet,
   RouterProvider
 } from 'react-router-dom';
-import { Home, Login, SignUp } from './pages';
+import { Appointment, Home, Login, SignUp } from './pages';
 import { Footer, Header } from './layouts';
 
 
@@ -13,7 +13,7 @@ const App = () => {
 
   const Layout = () => {
     return (
-      <div>
+      <div className='flex flex-col justify-between'>
         <Header />
         <Outlet />
         <Footer />
@@ -35,7 +35,11 @@ const App = () => {
         {
           path: '/',
           element: <Home />
-        }
+        },
+        {
+          path: '/appointment',
+          element: <Appointment />
+        },
       ]
     },
     {

@@ -19,3 +19,6 @@ export { default as cared } from './images/healthcare.png';
 export { default as service } from './images/social-care.png';
 export { default as team } from './images/medical-team.png';
 export { default as support } from './images/support.png';
+export { default as chiropractor } from './images/chiropractor.jpg';
+export { default as dentist } from './images/dentist.jpg';
+export { default as heart2 } from './images/heart2.jpg';
