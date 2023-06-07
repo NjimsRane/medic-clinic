@@ -32,7 +32,7 @@ const SpecialistComponent = () => {
             />
             <div className="bg-[lightgrey] p-8 flex flex-1 flex-col rounded gap-4">
                 <h4 className="text-center uppercase text-3xl font-semibold">working hours</h4>
-                <p className="text-center text-lg text-[#444]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, consequatur!</p>
+                <p className="text-center text-lg text-[#444] w-[50%] mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, consequatur!</p>
                 <ul className="flex flex-col gap-4 workingHours">
                     <li>
                         <p>monday</p>

@@ -4,7 +4,7 @@ import { child, hero } from "../../assets";
 const Hero = () => {
     return (
         < div className="hero mt-24">
-            <div className="container flex flex-col gap-6 md:flex-row lg:h-[80vh]  md:items-center">
+            <div className="flex flex-col gap-6 md:flex-row lg:h-[80vh]  md:items-center">
                 <div className="flex flex-col items-center gap-6 flex-1 lg:gap-10 md:items-start" >
                     <h1 className="text-5xl text-center capitalize text-[#0CB8B6] font-semibold leading-tight md:text-start">
                         complete health care <br /> solutions for everyone

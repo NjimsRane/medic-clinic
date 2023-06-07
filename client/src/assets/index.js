@@ -22,3 +22,5 @@ export { default as support } from './images/support.png';
 export { default as chiropractor } from './images/chiropractor.jpg';
 export { default as dentist } from './images/dentist.jpg';
 export { default as heart2 } from './images/heart2.jpg';
+export { default as dw } from './images/doctor-writing.png';
+export { default as bgAbout } from './images/background.jpg';

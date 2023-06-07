@@ -2,146 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    html{
-        font-size:62.5%;
-        scroll-behavior:smooth;
-        font-family: 'Roboto', sans-serif;
-        
-    }
-
-    .container{
-        padding:1rem 2rem;
-        margin-inline:auto;
-    }
-    @media screen and (min-width:700px) {
-        .container{
-            padding-inline:4rem;
-        }
-    }
-    @media screen and (min-width:900px) {
-        .container{
-            padding-inline:6rem;
-        }
-    }
-   
+@layer base {
+	html {
+		font-size: 62.5%;
+		scroll-behavior: smooth;
+		font-family: "Roboto", sans-serif;
+	}
+	h2 {
+		@apply text-5xl text-[#0C031B] uppercase font-semibold;
+	}
 }
 
+@layer components {
+	.ourService:hover {
+		transition: all 0.5s ease;
+		transform: translateY(-0.5rem);
+	}
+	.specialistHover .icons {
+		font-size: 2rem;
+		background-color: white;
+		color: #0cb8b6;
+		transition: all 0.5s ease;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.specialistHover .icons:hover {
+		background-color: #0cb8b6;
+		color: #fff;
+	}
+	.imageHover::after {
+		position: absolute;
+		content: "";
+		display: block;
+		top: 0;
+		left: -100%;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(
+			135deg,
+			rgba(30, 59, 138, 0.8),
+			hsla(179, 88%, 38%, 0.8)
+		);
+		border-radius: 50%;
+		transition: all 0.5s ease;
+	}
 
-@layer components{
-    .ourService:hover{
-        transition:all 0.5s ease;
-        transform:translateY(-0.5rem);
-    }
-    .specialistHover .icons{
-        font-size:2rem;
-        background-color:white;
-        color:#0CB8B6;
-        transition:all 0.5s ease;
-        border-radius:50%;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        
-       
-    }
-    .specialistHover .icons:hover{
-        background-color:#0CB8B6;
-        color:#fff;
-    }
-    .imageHover::after{
-        position: absolute;
-        content:'';
-        display:block;
-        top:0;
-        left:-100%;
-        height:100%;
-        width:100%;
-        background:linear-gradient(
-            135deg,
-            rgba(30, 59, 138, 0.8),
-            hsla(179, 88%, 38%, 0.8)
-        );
-        border-radius:50%;
-        transition:all 0.5s ease;
-    }
+	.specialistDiv:hover .imageHover::after {
+		border-radius: unset;
+		left: 0;
+	}
 
-    .specialistDiv:hover .imageHover::after{
-        border-radius:unset;
-        left:0;
-    }
+	.footerServices a {
+		color: #fff;
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+		transition: all 0.5s ease;
+	}
+	.footerServices a:hover {
+		color: #0cb8b6;
+	}
+	.footerLinks a {
+		font-size: 2rem;
+		color: #0cb8b6;
+	}
 
-    .footerServices a {
-        color:#fff;
-        font-size:1.2rem;
-        letter-spacing:1px;
-        transition:all 0.5s ease;
-    }
-    .footerServices a:hover{
-        color:#0CB8B6;
-    }
-    .footerLinks a{
-        font-size:2rem;
-        color:#0CB8B6;
-    }
+	.workingHours li {
+		border-bottom: 1px solid rgb(177, 177, 177);
+		padding-block: 0.5rem;
+	}
+	.workingHours p {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	.workingHours span {
+		color: #636262;
+	}
+	.appointmentForm input {
+		font-size: 1.4rem;
+		width: 100%;
+		height: 4rem;
+		padding: 1rem;
+		background-color: #ebebeb;
+		border-radius: 3px;
+	}
+	.optionContainer {
+		border-radius: 3px;
+		max-height: 0;
+		opacity: 0;
+	}
 
-    .workingHours li{
-        border-bottom:1px solid gray;
-        padding-block:0.5rem;
-    }
-    .workingHours p{
-        text-transform:uppercase;
-        font-weight: 700;
-    }
-    .workingHours span{
-        color:#636262;
-    }
-    .appointmentForm input{
-        font-size:1.4rem;
-        width:100%;
-        height:4rem;
-        padding:1rem ;
-        background-color:#ebebeb;
-        border-radius:3px;
-    }
-    .optionContainer{
-        border-radius:3px;
-        max-height:0;
-        opacity:0;
-    }
+	.optionContainer.active {
+		max-height: 15rem;
+		opacity: 1;
+		overflow-y: scroll;
+	}
 
-    .optionContainer.active{
-        max-height:15rem;
-        opacity:1;
-        overflow-y:scroll;
-    }
+	.optionContainer::-webkit-scrollbar {
+		width: 0.5rem;
+		background-color: #022625;
+		border-radius: 0 0.3rem 0.3rem 0;
+	}
+	.optionContainer::-webkit-scrollbar-thumb {
+		background-color: #525861;
+		border-radius: 0 0.3rem 0.3rem 0;
+	}
+	.selectBox label {
+		cursor: pointer;
+	}
 
-    .optionContainer::-webkit-scrollbar{
-        width:0.5rem;
-        background-color:#022625;
-        border-radius:0 0.3rem 0.3rem 0;
-    }
-    .optionContainer::-webkit-scrollbar-thumb{
-        background-color:#525861;
-        border-radius:0 0.3rem 0.3rem 0;
-    }
-    .selectBox label{
-        cursor: pointer;
-    }
+	.selected,
+	.option {
+		padding: 0.75rem 1.5rem;
+		cursor: pointer;
+	}
+	.selectBox .option:hover {
+		background-color: #0cb8b6;
+		color: #fff;
+	}
 
-    .selected ,
-    .option{
-        padding:0.75rem 1.5rem;
-        cursor: pointer;
-    }
-    .selectBox .option:hover{
-        background-color:#0CB8B6;
-        color:#fff;
-    }
-
-    .selectBox .option .radio{
-        display:none;
-    }
-
-    
+	.selectBox .option .radio {
+		display: none;
+	}
 }

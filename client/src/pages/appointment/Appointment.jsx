@@ -1,16 +1,13 @@
 import { AiFillCaretDown } from 'react-icons/ai';
+import { Banner, SectionTitle } from '../../components';
 
 const Appointment = () => {
     return (
-        <div className="py-20 flex flex-col gap-8">
-            <div className="banner bg-[#0CB8B6] h-[20vh]">
-                <div className="container flex flex-col justify-center h-full">
-                    <h1 className="text-white text-6xl font-semibold">Appointments</h1>
-                </div>
-            </div>
-            <div className="container">
-                <p>Book a visit with a doctor</p>
-                <h2>make an appointment now</h2>
+        <div className="py-20">
+            <Banner title='Appointments' />
+            <div className="px-8 md:px-16 lg:px-32">
+                <SectionTitle subtitle='Book a visit with a doctor' title='make an appointment now' />
+
                 <div className="w-full">
                     <form action="#" className="w-full">
                         <div className="appointmentForm flex flex-col space-y-8">

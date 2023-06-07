@@ -6,11 +6,11 @@ import { TiSocialLinkedin, TiSocialPinterest, TiSocialTwitter } from 'react-icon
 
 const OurSpecialist = ({ name, img1, title }) => {
     return (
-        <div className="flex flex-col gap-2 rounded-2xl overflow-hidden shadow-2xl h-[48vh] md:h-[30vh] lg:h-[45vh] relative transition-all duration-500 hover:shadow-none specialistDiv">
+        <div className="flex flex-col gap-2 rounded-2xl overflow-hidden shadow-2xl h-[46vh] md:h-[30vh] lg:h-[45vh] relative transition-all duration-500 hover:shadow-none specialistDiv">
             <div className="h-[80%] relative imageHover">
                 <img src={img1} className="w-full h-full object-cover rounded-3xl" alt="specialist picture " />
             </div>
-            <div className="flex flex-col gap-1 h-auto items-center">
+            <div className="flex flex-col gap-1 items-center">
                 <h3 className="capitalize text-2xl font-bold text-[#0C031B]">DR. {name}</h3>
                 <p className="text-xl capitalize font-semibold text-[#0c031b7a]">{title}</p>
             </div>

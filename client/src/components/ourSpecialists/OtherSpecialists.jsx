@@ -15,7 +15,7 @@ const OtherSpecialists = ({ imgs, subtitle, title, desc, illustration }) => {
             <div className="flex flex-col gap-4 justify-center text-center">
                 <span className="text-[#000] text-2xl" >{subtitle}</span>
                 <h4 className="text-[#222] text-4xl font-bold">{title}</h4>
-                <p className="text-[#2d2d2d] text-xl leading-normal">{desc}</p>
+                <p className="text-[#2d2d2d] text-xl leading-normal w-[50%] mx-auto">{desc}</p>
             </div>
 
         </div>

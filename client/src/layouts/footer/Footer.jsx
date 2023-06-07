@@ -11,8 +11,8 @@ const Footer = () => {
     return (
         <footer>
 
-            <div className="bg-[#1D1F27] py-10">
-                <div className="container flex flex-col gap-10 lg:flex-row lg:justify-between">
+            <div className="bg-[#1D1F27] py-10 px-8 md:px-16 lg:px-32">
+                <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
                     <div className="flex flex-1 flex-col gap-6 mt-16 lg:mt-0">
                         <Link to='/' className="block">
                             <img src={logo2} alt="logo" />
@@ -67,8 +67,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-700 py-4">
-                <div className="container flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
+            <div className="bg-gray-700 py-4 px-8 md:px-16 lg:px-32">
+                <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
                     <div className="text-xl text-white flex items-center gap-3">
                         <span>Made by NjimsRane with </span>
                         <AiFillHeart className="text-[crimson]" /> <span>Copyright@ {year}.All rights reserved.</span>
