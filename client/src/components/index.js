@@ -18,8 +18,10 @@ export { default as SpecialistComponent } from './ourSpecialists/SpecialistCompo
 export { default as SectionTitle } from './others/SectionTitle';
 
 
+// form
+export { default as FormInput } from './formInput/FormInput';
 
-
+// footer
 export { default as FooterTitle } from './footerComponents/FooterTitle';
 export { default as FooterPosts } from './footerComponents/FooterPosts';
 export { default as FooterProducts } from './footerComponents/FooterProducts';

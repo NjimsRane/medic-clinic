@@ -18,6 +18,7 @@ const Menu = () => {
 
 const NavBar = () => {
     const [toggle, setToggle] = useState(false);
+    const user = false;
 
     const hangleToggle = () => {
         setToggle(!toggle);
@@ -42,6 +43,7 @@ const NavBar = () => {
                     toggle
                         ? <div className="absolute flex flex-col items-center gap-8 capitalize text-2xl top-[6.2rem] bg-white w-[calc(100%-4rem)] md:w-[calc(100%-8rem)] py-8 shadow transition-all duration-500 lg:hidden">
                             <Menu />
+
                         </div>
                         : <div className="absolute flex flex-col items-center gap-8 capitalize text-2xl top-[6.2rem] bg-white w-[calc(100%-4rem)] md:w-[calc(100%-8rem)] py-8 shadow transition-all duration-500 translate-x-[200%] lg:hidden">
                             <Menu />
