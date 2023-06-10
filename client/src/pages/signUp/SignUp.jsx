@@ -67,7 +67,7 @@ const SignUp = () => {
                 <div className="w-[32rem] h-fit">
                     <img src={dr2} alt="" className="w-full h-[40%] object-cover" />
                     <div className="shadow bg-white px-10 py-5 rounded-b" >
-                        <h2 className="text-[#0cb8b6] text-3xl mb-4">signUp</h2>
+                        <h2 className="text-primary text-3xl mb-4">signUp</h2>
                         <form action="#" className="flex flex-col gap-4">
                             {
                                 inputs.map(input => (
@@ -80,10 +80,10 @@ const SignUp = () => {
                                 ))
                             }
                             <div className="flex items-center justify-between">
-                                <input type="submit" value="register" className="capitalize bg-[#0cb9b6] w-[7rem] py-1.5 text-2xl text-white font-semibold cursor-pointer rounded" />
+                                <input type="submit" value="register" className="capitalize bg-primary w-[7rem] py-1.5 text-2xl text-white font-semibold cursor-pointer rounded" />
                                 <div className="flex gap-2">
                                     <span>Already have an account ? </span>
-                                    <Link to='/login' className="capitalize text-[#0cb9b6]">login</Link>
+                                    <Link to='/login' className="capitalize text-primary">login</Link>
                                 </div>
                             </div>
 

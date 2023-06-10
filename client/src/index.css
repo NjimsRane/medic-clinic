@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--primary: #0cb8b6;
+}
+
 @layer base {
 	html {
 		font-size: 62.5%;
@@ -21,7 +25,7 @@
 	.specialistHover .icons {
 		font-size: 2rem;
 		background-color: white;
-		color: #0cb8b6;
+		color: var(--primary);
 		transition: all 0.5s ease;
 		border-radius: 50%;
 		display: flex;
@@ -29,7 +33,7 @@
 		align-items: center;
 	}
 	.specialistHover .icons:hover {
-		background-color: #0cb8b6;
+		background-color: var(--primary);
 		color: #fff;
 	}
 	.imageHover::after {
@@ -54,18 +58,14 @@
 		left: 0;
 	}
 
-	.footerServices a {
+	/* .footerServices a {
 		color: #fff;
 		font-size: 1.2rem;
 		letter-spacing: 1px;
 		transition: all 0.5s ease;
-	}
+	} */
 	.footerServices a:hover {
-		color: #0cb8b6;
-	}
-	.footerLinks a {
-		font-size: 2rem;
-		color: #0cb8b6;
+		color: var(--primary);
 	}
 
 	.workingHours li {
@@ -118,7 +118,7 @@
 		cursor: pointer;
 	}
 	.selectBox .option:hover {
-		background-color: #0cb8b6;
+		background-color: var(--primary);
 		color: #fff;
 	}
 

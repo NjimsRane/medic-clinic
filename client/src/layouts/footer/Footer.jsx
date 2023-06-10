@@ -1,10 +1,20 @@
 import { logo2 } from "../../assets";
 import { Link } from 'react-router-dom';
-import { FooterTitle, FooterPosts, FooterProducts } from "../../components";
+import { FooterPosts, FooterProducts } from "../../components";
 import { chairs, pills, stock, materials } from '../../assets';
 import { GrFacebookOption } from 'react-icons/gr';
 import { AiFillHeart } from 'react-icons/ai';
 import { TiSocialPinterest, TiSocialTwitter } from 'react-icons/ti';
+
+
+const FooterTitle = ({ title }) => {
+    return (
+        <div>
+            <h4 className="relative capitalize text-3xl  text-white before:absolute before:content-[''] before:w-20 before:h-1 before:left-0 before:top-12 before:bg-primary">{title}</h4>
+        </div>
+    );
+};
+
 
 const Footer = () => {
     const year = new Date().getFullYear();
@@ -56,7 +66,7 @@ const Footer = () => {
                         <FooterTitle
                             title='our services'
                         />
-                        <div className=" footerServices grid grid-cols-1 gap-4">
+                        <div className=" footerServices text-white text-[1.22rem] -tracking-tight duration-500 transition-all grid grid-cols-1 gap-4">
                             <Link to='/'>Appointments</Link>
                             <Link to='/'>Working hours</Link>
                             <Link to='/'>Cost calculator</Link>
@@ -74,7 +84,7 @@ const Footer = () => {
                         <AiFillHeart className="text-[crimson]" /> <span>Copyright@ {year}.All rights reserved.</span>
                     </div>
                     <div className="flex flex-col gap-4 lg:flex-row-reverse">
-                        <div className="flex justify-center gap-4 footerLinks">
+                        <div className="flex justify-center gap-4 text-primary text-4xl">
                             <a href="https://www.facebook.com" aria-label='link to facebook page' rel='noopener noreferrer' target='_blank'>
                                 <GrFacebookOption className='icons' />
                             </a>
@@ -87,7 +97,7 @@ const Footer = () => {
                                 <TiSocialPinterest className='icons' />
                             </a>
                         </div>
-                        <div className=" footerServices flex items-center gap-4 uppercase">
+                        <div className="footerServices text-white text-[1.22rem] -tracking-tight flex items-center gap-4 uppercase">
                             <Link to='/'>about us</Link>
                             <Link to='/'>services</Link>
                             <Link to='/'>contact us</Link>

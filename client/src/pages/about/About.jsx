@@ -22,28 +22,28 @@ const About = () => {
                 <SectionTitle subtitle='What we stand for' title='OUR VALUES' />
                 <section className="flex flex-col  md:flex-row md:flex-wrap gap-8">
                     <div className="flex gap-8 items-center self-start flex-1">
-                        <MdOutlinePerson className="text-6xl text-[#0cb8b6] transition-all duration-300 hover:text-[#636262] self-start" />
+                        <MdOutlinePerson className="text-6xl text-primary transition-all duration-300 hover:text-[#636262] self-start" />
                         <Values
                             valueTitle='DOCTOR YOU CHOOSE'
                             valueSubtitle='Donec hendrerit rutrum nibh, id egestas magna sodales a. Fusce feugiat velit eu ante blandit facilisis.'
                         />
                     </div>
                     <div className="flex gap-8 items-center self-start flex-1">
-                        <FaHeartbeat className="text-6xl text-[#0cb8b6] transition-all duration-300 hover:text-[#636262] self-start" />
+                        <FaHeartbeat className="text-6xl text-primary transition-all duration-300 hover:text-[#636262] self-start" />
                         <Values
                             valueTitle='YOUR HEALTHCARE'
                             valueSubtitle='Vestibulum imperdiet vestibulum laoreet. Integer elementum euismod ante sit amet elementum.'
                         />
                     </div>
                     <div className="flex gap-8 items-center self-start flex-1">
-                        <BsTelephoneFill className="text-6xl text-[#0cb8b6] transition-all duration-300 hover:text-[#636262] self-start" />
+                        <BsTelephoneFill className="text-6xl text-primary transition-all duration-300 hover:text-[#636262] self-start" />
                         <Values
                             valueTitle='ALWAYS THERE FOR YOU'
                             valueSubtitle='Mauris commodo lacinia nisi a fermentum. Donec risus magna, fringilla laoreet ullamcorper in, lobortis semper enim.'
                         />
                     </div>
                     <div className="flex gap-8 items-center self-start flex-1">
-                        <MdOutlineWoman className="text-6xl text-[#0cb8b6] transition-all duration-300 hover:text-[#636262] self-start" />
+                        <MdOutlineWoman className="text-6xl text-primary transition-all duration-300 hover:text-[#636262] self-start" />
                         <Values
                             valueTitle='NURSING STAFF'
                             valueSubtitle='Donec libero dui, dapibus non leo et, molestie faucibus risus. In fermentum tortor et posuere laoreet..'
@@ -51,14 +51,14 @@ const About = () => {
                     </div>
 
                     <div className="flex gap-8 items-center self-start flex-1">
-                        <MdOutlineMedicalServices className="text-6xl text-[#0cb8b6] transition-all duration-300 hover:text-[#636262] self-start" />
+                        <MdOutlineMedicalServices className="text-6xl text-primary transition-all duration-300 hover:text-[#636262] self-start" />
                         <Values
                             valueTitle='EMERGENCY SERVICES'
                             valueSubtitle='Pellentesque sagittis neque neque, ac ultrices neque tempor a. In . tellus sollicitudin eu.'
                         />
                     </div>
                     <div className="flex gap-8 items-center self-start flex-1">
-                        <FaHospital className="text-6xl text-[#0cb8b6] transition-all duration-300 hover:text-[#636262] self-start" />
+                        <FaHospital className="text-6xl text-primary transition-all duration-300 hover:text-[#636262] self-start" />
                         <Values
                             valueTitle='PREMIUM FACILITIES'
                             valueSubtitle='Donec hendrerit rutrum nibh, id egestas magna sodales a. Fusce feugiat velit eu ante blandit facilisis.'

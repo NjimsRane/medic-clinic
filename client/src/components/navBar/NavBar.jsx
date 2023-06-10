@@ -7,25 +7,25 @@ import { MdMenu, MdClose } from 'react-icons/md';
 const Menu = () => {
     return (
         <>
-            <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-[#0CB8B6]' : 'text-[gray]'}>home</NavLink>
-            <NavLink to={'/about'} className={(isActive) => isActive ? 'text-[#0CB8B6]' : 'text-[gray]'}>about us</NavLink>
-            <NavLink to={'/appointment'} className={({ isActive }) => isActive ? 'text-[#0CB8B6]' : 'text-[gray]'}>appointment</NavLink>
-            <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-[#0CB8B6]' : 'text-[gray]'}>blog</NavLink>
-            <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-[#0CB8B6]' : 'text-[gray]'}>shop</NavLink>
+            <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>home</NavLink>
+            <NavLink to={'/about'} className={(isActive) => isActive ? 'text-primary' : 'text-[gray]'}>about us</NavLink>
+            <NavLink to={'/appointment'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>appointment</NavLink>
+            <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>blog</NavLink>
+            <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>shop</NavLink>
         </>
     );
 };
 
 const NavBar = () => {
     const [toggle, setToggle] = useState(false);
-    const user = false;
+    // const user = false;
 
     const hangleToggle = () => {
         setToggle(!toggle);
     };
 
     return (
-        <nav >
+        <nav>
             <div className="flex justify-between items-center">
                 <Link to='/'>
                     <img src={logo1} alt="logo" className="w-48" />
@@ -35,7 +35,7 @@ const NavBar = () => {
                 </div>
                 <div className="cursor-pointer lg:hidden">
                     {
-                        toggle ? <MdClose className="text-5xl text-[#0CB8B6]" onClick={hangleToggle} /> : <MdMenu className="text-5xl text-[#0CB8B6]" onClick={hangleToggle} />
+                        toggle ? <MdClose className="text-5xl text-primary" onClick={hangleToggle} /> : <MdMenu className="text-5xl text-primary" onClick={hangleToggle} />
                     }
                 </div>
 

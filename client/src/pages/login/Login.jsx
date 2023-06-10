@@ -43,7 +43,7 @@ const Login = () => {
                 <div className="w-[32rem] h-fit">
                     <img src={dr1} alt="" className="w-full h-[40%] object-cover" />
                     <div className="shadow bg-white px-10 py-5 rounded-b" >
-                        <h2 className="text-[#0cb8b6] text-3xl mb-4">login</h2>
+                        <h2 className="text-primary text-3xl mb-4">login</h2>
                         <form action="#" className="flex flex-col gap-4">
                             {
                                 inputs.map(input => (
@@ -56,12 +56,11 @@ const Login = () => {
                                 ))
                             }
                             <div className="flex items-center justify-between">
-                                <a href="#" className="capitalize transition-all duration-500 hover:text-[#0cb9b6]">forgot password ?</a>
-                                <input type="submit" value="login" className="capitalize bg-[#0cb9b6] w-[6rem] py-1.5 text-2xl text-white font-semibold cursor-pointer rounded" />
+                                <a href="#" className="capitalize transition-all duration-500 hover:text-primary">forgot password ?</a>
+                                <input type="submit" value="login" className="capitalize bg-primary w-[6rem] py-1.5 text-2xl text-white font-semibold cursor-pointer rounded" />
                             </div>
-                            <div className="flex gap-2">
-                                <span>Don`t have an account ? </span>
-                                <Link to='/signUp' className="capitalize text-[#0cb9b6]">register</Link>
+                            <div className="text-center">
+                                <Link to='/signUp' className="capitalize text-primary">Create an account</Link>
                             </div>
                         </form>
                     </div>

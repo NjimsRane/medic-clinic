@@ -8,7 +8,7 @@ const FooterPosts = ({ imgPost, datePost, titlePost }) => {
             </Link>
             <div className="flex flex-col gap-2 text-xl">
                 <span className="text-[#ffffff8c] uppercase ">{datePost}</span>
-                <Link to='/' className="w-[13rem] text-white font-semibold transition-all duration-500 hover:text-[#0CB8B6]">
+                <Link to='/' className="w-[13rem] text-white font-semibold transition-all duration-500 hover:text-primary">
                     {titlePost}
                 </Link>
             </div>
