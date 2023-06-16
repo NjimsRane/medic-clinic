@@ -3,6 +3,7 @@ import { FaHospital, FaHeartbeat } from 'react-icons/fa';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { MdOutlineMedicalServices, MdOutlineWoman, MdOutlinePerson } from 'react-icons/md';
 import { dw, bgAbout } from "../../assets";
+import { useEffect } from 'react';
 
 
 const Values = ({ valueSubtitle, valueTitle }) => {
@@ -15,6 +16,9 @@ const Values = ({ valueSubtitle, valueTitle }) => {
 };
 
 const About = () => {
+    useEffect(() => {
+        document.title = 'About - Medicare';
+    }, []);
     return (
         <div className="py-20">
             <Banner title='about us' />

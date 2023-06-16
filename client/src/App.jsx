@@ -4,7 +4,7 @@ import {
   Outlet,
   RouterProvider
 } from 'react-router-dom';
-import { Appointment, Home, Login, SignUp, About } from './pages';
+import { Appointment, Home, Login, SignUp, About, Blog, Shop } from './pages';
 import { Footer, Header } from './layouts';
 
 
@@ -44,6 +44,14 @@ const App = () => {
           path: '/about',
           element: <About />
         },
+        {
+          path: '/blog',
+          element: <Blog />
+        },
+        {
+          path: '/shop',
+          element: <Shop />
+        }
       ]
     },
     {

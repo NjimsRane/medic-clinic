@@ -10,8 +10,8 @@ const Menu = () => {
             <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>home</NavLink>
             <NavLink to={'/about'} className={(isActive) => isActive ? 'text-primary' : 'text-[gray]'}>about us</NavLink>
             <NavLink to={'/appointment'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>appointment</NavLink>
-            <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>blog</NavLink>
-            <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>shop</NavLink>
+            <NavLink to={'/blog'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>blog</NavLink>
+            <NavLink to={'/shop'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>shop</NavLink>
         </>
     );
 };

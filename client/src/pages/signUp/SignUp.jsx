@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { dr2 } from "../../assets";
 import { Footer } from "../../layouts";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FormInput } from "../../components";
 
 const SignUp = () => {
@@ -11,6 +11,10 @@ const SignUp = () => {
         email: '',
         password: ''
     });
+
+    useEffect(() => {
+        document.title = 'SignUp - Medicare';
+    }, []);
 
     const inputs = [
         {

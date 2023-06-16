@@ -1,7 +1,13 @@
 import { AiFillCaretDown } from 'react-icons/ai';
 import { Banner, SectionTitle } from '../../components';
+import { useEffect } from 'react';
 
 const Appointment = () => {
+
+    useEffect(() => {
+        document.title = 'Appointment - Medicare';
+    }, []);
+
     return (
         <div className="py-20">
             <Banner title='Appointments' />
