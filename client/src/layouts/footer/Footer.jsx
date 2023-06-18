@@ -67,7 +67,7 @@ const Footer = () => {
                             title='our services'
                         />
                         <div className=" footerServices text-white text-[1.22rem] -tracking-tight duration-500 transition-all grid grid-cols-1 gap-4">
-                            <Link to='/'>Appointments</Link>
+                            <Link to='/appointments'>Appointments</Link>
                             <Link to='/'>Working hours</Link>
                             <Link to='/'>Cost calculator</Link>
                             <Link to='/'>Procedures</Link>
@@ -98,9 +98,9 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className="footerServices text-white text-[1.22rem] -tracking-tight flex items-center gap-4 uppercase">
-                            <Link to='/'>about us</Link>
+                            <Link to='/about'>about us</Link>
                             <Link to='/'>services</Link>
-                            <Link to='/'>contact us</Link>
+                            <Link to='/contact'>contact us</Link>
                             <Link to='/'>working hours</Link>
                         </div>
                     </div>

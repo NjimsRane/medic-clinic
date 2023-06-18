@@ -3,6 +3,37 @@ import { child, heart2, chiropractor } from '../../assets';
 import { FaTooth, FaHeartbeat } from 'react-icons/fa';
 import { TbMassage } from 'react-icons/tb';
 
+const schedules = [
+    {
+        day: 'monday',
+        hours: '8:00 AM - 2: 30 PM'
+
+    },
+    {
+        day: 'tuesday',
+        hours: '8:00 AM - 2: 30 PM'
+    },
+    {
+        day: 'wenesday',
+        hours: '8:00 AM - 7: 00 PM'
+    },
+    {
+        day: 'thursday',
+        hours: '8:00 AM - 7:00 PM'
+    },
+    {
+        day: 'friday',
+        hours: '8:00 AM - 7: 00 PM'
+    },
+    {
+        day: 'saturday',
+        hours: 'closed'
+    },
+    {
+        day: 'sunday',
+        hours: 'closed'
+    }
+];
 
 const SpecialistComponent = () => {
     return (
@@ -34,34 +65,14 @@ const SpecialistComponent = () => {
                 <h4 className="text-center uppercase text-3xl font-semibold">working hours</h4>
                 <p className="text-center text-lg text-[#444] w-[50%] mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, consequatur!</p>
                 <ul className="flex flex-col gap-4 workingHours">
-                    <li>
-                        <p>monday</p>
-                        <span>8:00 AM - 2:30 PM</span>
-                    </li>
-                    <li>
-                        <p>tuesday</p>
-                        <span>8:00 AM - 2:30 PM</span>
-                    </li>
-                    <li>
-                        <p>wednesday</p>
-                        <span>8:00 AM - 7:00 PM</span>
-                    </li>
-                    <li>
-                        <p>thursday</p>
-                        <span>8:00 AM - 7:00 PM</span>
-                    </li>
-                    <li>
-                        <p>friday</p>
-                        <span>8:00 AM - 7:00 PM</span>
-                    </li>
-                    <li>
-                        <p>saturday</p>
-                        <span>closed</span>
-                    </li>
-                    <li>
-                        <p>sunday</p>
-                        <span>closed</span>
-                    </li>
+                    {
+                        schedules.map((schedule, index) => (
+                            <li key={index}>
+                                <p className="capitalize">{schedule.day}</p>
+                                <span>{schedule.hours}</span>
+                            </li>
+                        ))
+                    }
                 </ul>
             </div>
 

@@ -4,14 +4,39 @@ import { logo1 } from "../../assets";
 import { Link, NavLink } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md';
 
+const links = [
+    {
+        name: 'home',
+        link: '/'
+    },
+    {
+        name: 'about us',
+        link: '/about'
+    },
+    {
+        name: 'appointment',
+        link: '/appointment'
+    },
+    {
+        name: 'blog',
+        link: '/blog'
+    },
+    {
+        name: 'shop',
+        link: '/shop'
+    },
+];
+
 const Menu = () => {
     return (
         <>
-            <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>home</NavLink>
-            <NavLink to={'/about'} className={(isActive) => isActive ? 'text-primary' : 'text-[gray]'}>about us</NavLink>
-            <NavLink to={'/appointment'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>appointment</NavLink>
-            <NavLink to={'/blog'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>blog</NavLink>
-            <NavLink to={'/shop'} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>shop</NavLink>
+
+            {
+                links.map((link, index) => (
+                    <NavLink to={link.link} key={index} className={({ isActive }) => isActive ? 'text-primary' : 'text-[gray]'}>{link.name}</NavLink>
+                ))
+            }
+
         </>
     );
 };
