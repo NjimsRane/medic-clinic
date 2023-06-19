@@ -58,12 +58,6 @@
 		left: 0;
 	}
 
-	/* .footerServices a {
-		color: #fff;
-		font-size: 1.2rem;
-		letter-spacing: 1px;
-		transition: all 0.5s ease;
-	} */
 	.footerServices a:hover {
 		color: var(--primary);
 	}
@@ -124,5 +118,12 @@
 
 	.selectBox .option .radio {
 		display: none;
+	}
+
+	.formInput input:invalid[focused="true"] ~ small {
+		display: block;
+	}
+	.formInput input:invalid[focused="true"] {
+		border: 1px solid crimson;
 	}
 }

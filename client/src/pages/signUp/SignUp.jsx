@@ -22,8 +22,9 @@ const SignUp = () => {
             name: 'fullname',
             type: 'text',
             placeholder: 'fullname',
-            errorMessage: 'njimoke',
+            errorMessage: 'Please enter your full name',
             label: 'fullname',
+            pattern: '^[A-Za-z]$',
             required: true
 
         },
@@ -32,8 +33,9 @@ const SignUp = () => {
             name: 'username',
             type: 'text',
             placeholder: 'username',
-            errorMessage: 'njimoke',
+            errorMessage: "Username should be 3-16 characters and shouldn't include any special character! ",
             label: 'username',
+            pattern: '^[A-Za-z0-9]{3,16}$',
             required: true
 
         },
@@ -42,7 +44,7 @@ const SignUp = () => {
             name: 'email',
             type: 'email',
             placeholder: 'email',
-            errorMessage: 'njimoke',
+            errorMessage: 'Invalid email address form',
             label: 'email',
             required: true
 
