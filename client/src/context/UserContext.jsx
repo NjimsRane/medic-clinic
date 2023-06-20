@@ -1,23 +1,24 @@
-import { createContext, useState } from "react";
+import { useEffect, createContext, useState } from "react";
+
 
 const UserContext = createContext({});
 
 const UserProvider = ({ children }) => {
-	const [user, setUser] = useState(null);
+
+	const [currentUser, setCurrentUser] = useState(
+		JSON.parse(`${localStorage.getItem('patient')}`) || null
+	);
+
+
+	useEffect(() => {
+		localStorage.setItem('patient', JSON.stringify(currentUser));
+	}, [currentUser]);
 
 	const login = () => {
-		console.log("njjmok");
+		console.log('soussou');
 	};
 
-	const logout = () => {
-		setUser(null);
-	};
-
-	return (
-		<UserContext.Provider value={{ user, login, logout }}>
-			{children}
-		</UserContext.Provider>
-	);
+	return <UserContext.Provider value={{ login, currentUser }}>{children}</UserContext.Provider>;
 };
 
 export { UserProvider, UserContext };
